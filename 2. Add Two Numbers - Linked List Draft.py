@@ -13,7 +13,6 @@ class Solution():
 
         return str_sum
 
-
 solution = Solution()
 print(solution.addTwoNumbers([2,4,3], [5,6,4])) # 342 + 465 = 807 => [7,0,8]
 print(solution.addTwoNumbers([0], [0]))
