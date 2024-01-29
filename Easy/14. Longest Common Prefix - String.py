@@ -12,6 +12,9 @@ class Solution(object):
                 # current character in the first string
                 if i == len(str) or str[i] != strs[0][i]: 
                     return res
+            res += strs[0][i]
+
+        return res
                 
 
 solution = Solution()
