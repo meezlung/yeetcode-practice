@@ -6,8 +6,17 @@ class Solution(object):
     def longestCommonPrefix(self, strs):
         for i in range(len(strs[0])):
             for j in range(1, len(strs)):
+                print('j', j)
+                print('i', i)
+                print(strs[j])
+                print('yes', strs[0][i])
+                print('ye2', strs[j][i])
+
+                print()
+
                 if i == len(strs[j]) or strs[0][i] != strs[j][i]:
                     return strs[j][:i]
+                
         return strs[0]
                 
 
