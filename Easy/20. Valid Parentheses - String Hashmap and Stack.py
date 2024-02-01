@@ -19,3 +19,20 @@ solution = Solution()
 print(solution.isValid("()"))
 print(solution.isValid("()[]{}"))
 print(solution.isValid("{[]}"))
+
+"""
+Example 1:
+
+Input: s = "()"
+Output: true
+
+Example 2:
+
+Input: s = "()[]{}"
+Output: true
+
+Example 3:
+
+Input: s = "(]"
+Output: false
+"""
