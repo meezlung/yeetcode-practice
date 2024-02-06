@@ -17,10 +17,6 @@ class Solution(object):
 
         return (end_time - start_time) * 1000
 
-
-    
-
-
 solution = Solution()
 # print(solution.strStr("butsadsad", "sad"))
 # print(solution.strStr("leetcode", "leeto"))      
