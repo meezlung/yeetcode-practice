@@ -10,6 +10,8 @@ class Solution(object):
         for char in s:
             char_count[char] = char_count.get(char, 0) + 1 # counts every letter in s
 
+        print(sorted(char_count.items()))
+
         for char in t:
             # if current char in t is in char_count; or
             # if the current count of char in char_count is 0, which implies if it is non-existent in char_count
@@ -20,6 +22,6 @@ class Solution(object):
         return True
 
 solution = Solution()
-print(solution.isAnagram("anagram", "nagaram")) # =. true
+print(solution.isAnagram("anagram", "nagaram")) # => true
 print(solution.isAnagram("rat", "car")) # => false
 print(solution.isAnagram("aacc", "ccac")) # => false
