@@ -22,9 +22,24 @@ class Solution(object):
                 stack.pop()
         
         backtracking(0, 0)
-        return result
+
+        for r in result:
+            print(r)
+        print()
+        # return result
 
 
 solution = Solution()
-print(solution.generateParenthesis(3))
-print(solution.generateParenthesis(1))
+# print(solution.generateParenthesis(1))
+# print(solution.generateParenthesis(2))
+# print(solution.generateParenthesis(3))
+# print(solution.generateParenthesis(4))
+# print(solution.generateParenthesis(5))
+# print(solution.generateParenthesis(6))
+
+solution.generateParenthesis(1)
+solution.generateParenthesis(2)
+solution.generateParenthesis(3)
+solution.generateParenthesis(4)
+solution.generateParenthesis(5)
+solution.generateParenthesis(6)
