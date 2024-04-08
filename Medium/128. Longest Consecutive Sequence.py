@@ -5,7 +5,9 @@ class Solution(object):
         :rtype: int
         """
         count = 0
-        nums = set(nums)
+        nums = set(nums) 
+        # converting lists into sets is much more faster than 
+        # converting lists into hashmap one by one
 
         for num in nums:
             # check if the num smaller than the current num
