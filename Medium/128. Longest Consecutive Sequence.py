@@ -26,7 +26,7 @@ class Solution(object):
         return count
 
 
-
+# thats crazy ah - ethan mislang 2024
         
 solution = Solution()
 print(solution.longestConsecutive([100, 4, 200, -1, 0]))
