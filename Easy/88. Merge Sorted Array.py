@@ -1,5 +1,5 @@
 class Solution(object):
-    def merge(self, nums1, m, nums2, n):
+    def merge1(self, nums1, m, nums2, n):
         """
         :type nums1: List[int]
         :type m: int
@@ -34,6 +34,14 @@ class Solution(object):
                 # print()
                 k -= 1
                 j -= 1
+
+        return nums1
+    
+    def merge(self, nums1, m, nums2, n):
+        for i in range(n):
+            nums1[m+i] = nums2[i]
+
+        nums1.sort()
 
         return nums1
 
