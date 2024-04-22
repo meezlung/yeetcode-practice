@@ -7,7 +7,7 @@ class Solution(object):
             if i == "(":
                 score += 1
             elif i == ")":
-                max_depth = max(score, max_depth)
+                max_depth: int = max(score, max_depth)
                 score -= 1
 
         return max_depth
