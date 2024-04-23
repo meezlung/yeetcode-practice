@@ -1,5 +1,5 @@
 class Solution(object):
-    def removeDuplicates(self, nums):
+    def removeDuplicates1(self, nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -22,6 +22,17 @@ class Solution(object):
 
         return k
 
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+
+        # nums = sorted(set(nums)) # this doesnt work because im creating another nums 
+                                   # which is passed on by the original unchanged nums
+        nums[:] = sorted(set(nums)) # the [:] knows that it's an existing list which you need to put new stuff into it
+        return len(nums)
+    
 solution = Solution()
 print(solution.removeDuplicates([1,1,2]), 2)
 print(solution.removeDuplicates([0,0,1,1,1,2,2,3,3,4]), 5)
