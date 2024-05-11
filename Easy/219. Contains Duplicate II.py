@@ -17,9 +17,7 @@ class Solution(object):
         seen = set()
 
         for i, num in enumerate(nums):
-            print(i, num)
             if i > k:
-                print(nums[i - k - 1])
                 seen.remove(nums[i - k - 1]) # makes it faster removes the index that has been kth times, and - 1 for indexing
             if num in seen:
                 return True
